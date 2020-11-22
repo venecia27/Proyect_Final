@@ -1,0 +1,300 @@
+* {
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: 'Grandstander', cursive;
+  font-family: 'Righteous', cursive;
+
+
+}
+
+title {
+  display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+}
+
+header {
+  background-color: #F3bad6;
+  flex-flow: column;
+  color: #FB45B9;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+
+
+}
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+
+}
+
+.logo {
+  height: 100%;
+
+}
+.opciones{
+  position: absolute;
+  right: 1vw;
+  top: 16vh;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+.opciones i{
+  color: white;
+}
+
+.carrito{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrito a{
+  color: white;
+}
+
+.carrito a:hover{
+  text-decoration: none;
+}
+
+.buscar, .carrito{
+  margin: 0 35px;
+}
+
+.buscar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buscar a{
+  color: white;
+}
+.buscar a:hover{
+  text-decoration: none;
+}
+.menu {
+  position: absolute;
+  right: 1vw;
+  top: 3vh;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar {
+  width: 100%;
+  font-weight: 200;
+
+}
+
+.navbar-nav {
+  cursor: pointer;
+  background-color: pink;
+
+}
+
+.navbar.navbar-4 .navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=black');
+
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.barra {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.n1 {
+  height: 15px;
+  margin: 15px;
+}
+.n1 a{
+  color: white;
+}
+
+
+
+ .secundario {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#inicio {
+
+  margin: 10px auto;
+
+}
+
+#aside {
+
+
+  margin: 10px auto;
+
+}
+
+
+
+.galeria{
+
+display: flex;
+flex-direction:row;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+
+}
+
+.minigaleria img {
+  height: 200px;
+  width: 200px;
+  border: 5px solid #BB8FCE;
+  margin: 10px auto;
+
+}
+
+footer {
+  width: 100vw;
+  background-color: #F3bad6;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+footer .secciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.seccion{
+  margin-right: 110px;
+
+}
+.seccion h3, .seccion p {
+  text-align: center;
+}
+.seccion>a{
+  color: black;
+  margin:25px auto;
+}
+.seccion>a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.iconos {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.icono_link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border: 3px solid white;
+  border-radius: 50px;
+  margin: 0 auto;
+  font-size: 25px;
+  text-decoration: none;
+}
+.facebook:hover{
+  color: blue;
+  border: 3px solid blue;
+  transition: .2s all;
+  cursor: pointer;
+}
+
+.instagram:hover{
+  color: violet;
+  border: 3px solid violet;
+  transition: .2s all;
+  cursor: pointer;
+}
+
+.whatsapp:hover{
+  color: green;
+  border: 3px solid green;
+  transition: .2s all;
+  cursor: pointer;
+}
+
+.pagos .metodo{
+  margin: 15px;
+}
+.footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 900px){
+
+header{
+
+  height:  20vh;
+}
+
+.opciones{
+
+  top: 10vh;
+}
+
+
+.n1{
+  display:none;
+}
+
+footer .secciones {
+
+flex-direction: column;
+}
+
+.seccion{
+
+  margin: 15px auto;
+}
+
+}
+
+@media (max-width: 530px){
+
+.banner>a{
+
+  margin-right: 65vw;
+}
+
+}
