@@ -133,7 +133,10 @@ header {
   color: white;
 }
 
+.principal1 img{
+  border: 5px solid #BB8FCE;
 
+}
 
  .secundario {
   display: flex;
@@ -141,6 +144,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 
 
 }
@@ -167,6 +171,7 @@ flex-direction:row;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
+
 
 
 }
