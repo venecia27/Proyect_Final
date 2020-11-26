@@ -24,6 +24,8 @@ header {
   margin-bottom: 5px;
   margin-top: 5px;
   display: flex;
+  position: relative;
+  z-index: 0;
 
 
 }
@@ -38,9 +40,14 @@ header {
 }
 
 .logo {
-  height: 100%;
+
+position: absolute;
+left: 45%;
+top: 42px;
+transform: translate(0%,-50%);
 
 }
+
 .opciones{
   position: absolute;
   right: 1vw;
@@ -49,6 +56,7 @@ header {
   flex-direction: row;
   z-index: 1;
 }
+
 .opciones i{
   color: white;
 }
@@ -112,6 +120,16 @@ header {
   background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=black');
 
 }
+
+.responsive{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+}
+
+
 
 .container-fluid {
   display: flex;
@@ -297,9 +315,63 @@ flex-direction: column;
 
 @media (max-width: 530px){
 
+.menu{
+
+  top:18vh;
+  background: #F3bad6;
+  left: 1vw;
+  right: 0;
+  width: 101vw;
+  margin-left: 5px;
+  z-index: 1;
+}
+
+.principal1{
+
+margin-top: 10px;
+
+}
+
+.opciones{
+
+top: 5vh;
+
+}
+
+.carrito{
+
+  position: relative;
+  left: -65%;
+}
+
 .banner>a{
 
   margin-right: 65vw;
 }
 
+}
+
+
+@media (max-width:420px){
+
+  .carrito{
+
+    left: -55%;
+  }
+}
+
+@media (max-width:392px){
+
+  .carrito{
+
+    left: -40%;
+  }
+}
+
+@media (max-width: 320px ){
+
+  .carrito{
+
+    left: -20%;
+  }
 }
